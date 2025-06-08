@@ -33,6 +33,18 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow this app to access your camera for motion capture."
+        }
+      ],
+      [
+        "expo-asset",
+        {
+          "assets": ["./assets"]
+        }
       ]
     ],
     "experiments": {
