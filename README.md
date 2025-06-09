@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+Here's a complete `README.md` file for your **3D Avatar Motion Capture Test App** built with React Native and Expo:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+````markdown
+# 3D Avatar Motion Capture Test App
 
-1. Install dependencies
+A simple React Native app using Expo that displays a live camera feed. Built with `expo-router`, `expo-camera`, and designed for further extension into 3D avatar motion capture using tools like `expo-gl`, `expo-three`, and `three`.
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+- 📷 Camera feed with real-time access
+- 🔁 Navigation with `expo-router`
+- 📱 Tested on Android with Expo Go
+- 🧩 Ready for integration with pose detection and 3D rendering
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Setup Instructions
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 1. Install Node.js
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Make sure you have **Node.js v18.x or higher** installed from [https://nodejs.org](https://nodejs.org).
 
-## Get a fresh project
-
-When you're ready, run:
+### 2. Install Expo CLI
 
 ```bash
-npm run reset-project
+npm install -g expo-cli
+```
+````
+
+Sure! Here's the Git clone snippet for your repository:
+
+```bash
+git clone https://github.com/ravikirananaparthi/snap-sense.git
+cd snap-sense
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+```bash
+cd <pathto-directory>\Snapsense
+```
 
-## Learn more
+### 4. Install Dependencies
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+npx expo install expo-camera@~15.0.15 expo-router@~3.5.14 @react-navigation/native@^6.1.17 @react-navigation/stack@^6.3.29
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 5. Start the App
 
-## Join the community
+```bash
+npx expo start --clear
+```
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📱 Running on Device
+
+1. Install the **Expo Go** app on your Android device.
+2. Open the QR code scanner inside Expo Go.
+3. Scan the QR code displayed in the terminal or browser after running `npx expo start`.
+4. Grant camera permissions when prompted.
+
+---
+
+## 🗂️ File Structure
+
+```
+app/
+├── _layout.js       # Navigation setup
+├── index.js         # Home screen with “Open Camera” button
+├── camera.js        # Camera screen with live feed and “Go Back” button
+app.json             # App config and camera permissions
+```
+
+---
+
+## 🧪 Troubleshooting
+
+### ❌ Error: `type is invalid:`
+
+Try clearing the cache and reinstalling dependencies:
+
+```bash
+rmdir /s /q node_modules package-lock.json
+npm install
+npx expo start --clear
+```
+
+### 📷 Camera Not Working?
+
+- Ensure camera permissions are granted in the **Expo Go** app.
+- Use a **physical Android device** (not an emulator).
+
+---
