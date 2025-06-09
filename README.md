@@ -44,7 +44,7 @@ cd <pathto-directory>\Snapsense
 
 ```bash
 npm install
-npx expo install expo-camera@~15.0.15 expo-router@~3.5.14 @react-navigation/native@^6.1.17 @react-navigation/stack@^6.3.29
+npx expo install expo-camera expo-router expo-asset expo-three expo-constants expo-font expo-linking expo-splash-screen expo-status-bar expo-system-ui expo-web-browser react-native-gesture-handler react-native-reanimated react-native-safe-area-context react-native-screens
 ```
 
 ### 5. Start the App
