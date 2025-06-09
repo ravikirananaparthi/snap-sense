@@ -12,7 +12,7 @@ A simple React Native app using Expo that displays a live camera feed. Built wit
 - 📷 Camera feed with real-time access
 - 🔁 Navigation with `expo-router`
 - 📱 Tested on Android with Expo Go
-- 🧩 Ready for integration with pose detection and 3D rendering
+- 🧩  3D rendering of Avatar Object (.glb) file 
 
 ---
 
